@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".NameActivity"
+    android:id="@+id/name_root">
+
+<LinearLayout
+    android:layout_width="300dp"
+    android:layout_height="240dp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="100dp"
+    android:background="#FFEBEE"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F8BBD0"
+        android:gravity="center_horizontal"
+        android:paddingVertical="10dp"
+        android:text="设置汪人姓名吧"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:text="男汪人："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtx_boy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="(男汪人姓名)"
+            android:singleLine="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="10dp"
+            android:text="女汪人："
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtx_girl_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:hint="(女汪人姓名)"
+            android:singleLine="true"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="5dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_name_set_btn"
+        android:text="保存"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"/>
+</LinearLayout>
+
+</RelativeLayout>
